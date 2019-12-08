@@ -1,11 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<headPh		<title>Prologue by HTML5 UP</title>
+	<headPh		<title>Foivos Gypas, PhD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -22,30 +18,18 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/me.jpg" alt="" /></span>
-							<h1 id="title">Foivos Gypas</h1>
-							<p>Bioinfromatics, PhD</p>
+							<!-- <span class="image avatar48"><img src="images/me.jpg" alt="" /></span> -->
+							<h1 id="title">Foivos Gypas, PhD</h1>
+							<p>Bioinfromatics <br> Data Science <br> Software Development</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
-							<!--
-
-								Prologue's nav expects links in one of two formats:
-
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#research" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Research</span></a></li>
+								<!-- <li><a href="#research" id="research-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Research</span></a></li> -->
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#tools" id="tools-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Tools</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -74,10 +58,14 @@
 						<div class="container">
 
 							<header>
-								<h3 class="alt">Welcome to my personal website. I'm <strong>Foivos</strong>, a postdoctoral researcher working on Bioinformatics and RNA biology.</h3>
-								<!--
- 								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p> -->
+								<div>
+								<img src="images/me.jpg" width="150" />
+								<h4 class="alt"></h4>
+								
+								 <p>Hi! I'm <strong>Foivos</strong> a postdoctoral researcher working in Basel, Switzerland. I am interested in <br> <strong>Bioinformatics, Data Science and Software Development.</strong></p>
+								</div>
+								 
+								
 							</header>
 							
 							<!-- 
@@ -87,8 +75,30 @@
 
 						</div>
 					</section>
+				<!-- About Me -->
+				<section id="about" class="four">
+						<div class="container">
 
-				<!-- Portfolio -->
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<p style="text-align: justify;">My name is Foivos and I come from the beatiful island of <a href="https://en.wikipedia.org/wiki/Corfu"><span class="label">Corfu</span></a>, Greece. During the last 6 years I live and work in Basel, Switzerland.</p>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+							<p style="text-align: justify;">I am currently a postdoctoral researcher at the lab of Professor <a href="https://grosshanslab.org/"><span class="label">Helge Grosshans</span></a> at FMI, Basel Switzerland.
+								
+								working on computational methods to study RNA function and processing. I am developing software and pipelines to analyze High Throuput Sequencing (HTS) data ranging from RNA-seq, poly(A)-seq and ribo-seq to single cells and third generation sequencing technologies (PacBio, Oxford Nanopore). At the same time, I am collaborating with experimental biologists to help them with the analysis and interpretation of their data.<p>
+
+							<p style="text-align: justify;">I obtained a Ph.D. in Bioinformatics from the University of Basel, Switzerland (advisor: Professor <a href="https://zavolan.biozentrum.unibas.ch/">Mihaela Zavolan</a>). I also hold an MSc in Bioinformatics from the National and Kapodistrian University of Athens, Greece (Department of Biology). I also hold a diploma (5 year's course) in Electronics and Computer Engineering from the Techincal University of Crete, Greece.<p>
+
+							<p>You can find a list of publications on <a href="https://scholar.google.ch/citations?user=bqPlkhMAAAAJ&hl=en"><span class="label">Google Scholar</span></a>.</p>
+
+						</div>
+					</section>
+
+				<!-- Research -->
+				<!--
 					<section id="research" class="two">
 						<div class="container">
 
@@ -96,75 +106,52 @@
 								<h2>Research</h2>
 							</header>
 
-							<p style="text-align: justify;">Most mammalian genes have multiple isoforms which are generated through the use of alternative transcription initiation sites, termination sites, and internal exons. High-throughput sequencing technologies enabled the discovery and quantification of many novel RNA species including protein-coding RNAs, microRNAs, long non-coding RNAs and others. The most widely used sequencing technologies generate reads that are short relative to the length of the transcripts. Thus, computational methods are needed to reconstruct transcripts and infer their expression levels from the RNA-seq data. I am developing such tools that let us understand gene regulatory processes in health and disease. I am a believer in open and reproducible science, and I always try to follow best practices in my work.</p>
-
-							<!--<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div> -->
+							<p style="text-align: justify;">Most mammalian genes have multiple isoforms which are generated through the use of alternative transcription initiation sites, termination sites, and internal exons. High-throughput sequencing technologies enabled the discovery and quantification of many novel RNA species including protein-coding RNAs, microRNAs, long non-coding RNAs and others. The most widely used sequencing technologies generate reads that are short relative to the length of the transcripts. Thus, computational methods are needed to reconstruct transcripts and infer their expression levels from the RNA-seq data. I am developing such tools that let us understand gene regulatory processes in health and disease. I am a believer in open and reproducible science, and I always try to follow best practices in my work.</p>							
 
 						</div>
 					</section>
+				-->
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+				<!-- Tools -->
+				<section id="tools" class="three">
+					<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+						<header>
+							<h2>Tools</h2>
+						</header>
 
-							<p style="text-align: justify;">My name is Foivos (pronounced: Fivos) and I come from the beatiful island of <a href="https://en.wikipedia.org/wiki/Corfu"><span class="label">Corfu</span></a>, Greece. During the last 5 years I live and work in Basel, Switzerland where I obtained my PhD in Bioinformatics.</p>
-
-							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
-							<p style="text-align: justify;">I am currently a postdoctoral researcher at the lab of Professor <a href="https://www.biozentrum.unibas.ch/research/groups-platforms/overview/unit/zavolan/"><span class="label">Mihaela Zavolan</span></a>, University of Basel, Switzerland working on computational methods to study RNA-processing in health and disease. I am developing software and pipelines to analyze data ranging from RNA-seq, poly(A)-seq and ribo-seq to single cells and third generation sequencing technologies (PacBio, Oxford Nanopore). At the same time, I am collaborating with experimental biologists to help them with the analysis and interpretation of their data.<p>
-
-							<p style="text-align: justify;">Apart from a Ph.D. in Bioinformatics, I hold an MSc in Bioinformatics from the National and Kapodistrian University of Athens, Greece (Department of Biology) where during my thesis I worked on computational methods for the identification of Molecular Recognition Features (MoRFs) in membrane proteins. I also hold a diploma (5 year's course) in Electronics and Computer Engineering from the Techincal University of Crete, Greece. During my thesis, I applied machine learning methods on a breast cancer microarray dataset.<p>
-
-							<p>You can find a list of publications on <a href="https://scholar.google.ch/citations?user=bqPlkhMAAAAJ&hl=en"><span class="label">Google Scholar</span></a>.</p>
-
+						<div class="row">
+							<div class="4u 12u$(mobile)">
+								<article class="item">
+									<a href="https://github.com/panoptes-organization/panoptes" class="image fit"><img src="images/panoptes_logo.png" alt="" /></a>
+										<header>
+											<!-- <h3>panoptes</h3> -->
+											Monitor computational workflows in real time
+										</header>
+								</article>
+							</div>
+							<div class="4u 12u$(mobile)">
+								<article class="item">
+									<a href="http://tectool.unibas.ch/" class="image fit"><img src="images/tectool.png" alt="" /></a>
+									<header>
+										<!-- <h3>TECtool</h3> -->
+										TECtool uses mRNA and 3’ end sequencing data to identify novel terminal exons
+									</header>
+								</article>
+							</div>
+							<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="http://bioinformatics.biol.uoa.gr/mpMoRFsDB/" class="image fit"><img src="images/mpmorfsdb.png" alt="" /></a>
+										<header>
+											<!-- <h3>TECtool</h3> -->
+											A database of Molecular Recognition Features in Membrane Proteins
+										</header>
+									</article>
+								</div>
 						</div>
-					</section>
+
+					</div>
+				</section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
