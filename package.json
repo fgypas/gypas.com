@@ -1,0 +1,63 @@
+{
+  "name": "foivos-gypas-portfolio",
+  "version": "2.0.0",
+  "description": "Personal portfolio website for Foivos Gypas - Bioinformatics Software Engineer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint assets/js --ext .js",
+    "lint:fix": "eslint assets/js --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,css,html,md}\"",
+    "test": "vitest",
+    "serve": "http-server dist -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "bioinformatics",
+    "data-science",
+    "software-development",
+    "personal-website"
+  ],
+  "author": {
+    "name": "Foivos Gypas",
+    "email": "fgypas@gmail.com",
+    "url": "https://gypas.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fgypas/gypas.com.git"
+  },
+  "homepage": "https://gypas.com",
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.4.3",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "http-server": "^14.1.1",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.4",
+    "vite": "^5.4.8",
+    "vite-plugin-pwa": "^0.20.5",
+    "vitest": "^2.1.2"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "type": "module"
+}
