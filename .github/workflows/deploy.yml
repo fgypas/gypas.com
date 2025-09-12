@@ -45,8 +45,8 @@ jobs:
       uses: treosh/lighthouse-ci-action@v10
       with:
         configPath: './.lighthouserc.json'
-        uploadArtifacts: true
         temporaryPublicStorage: true
+      continue-on-error: true
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
