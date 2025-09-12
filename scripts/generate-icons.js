@@ -8,35 +8,36 @@ const __dirname = path.dirname(__filename);
 
 async function generateIcons() {
   const projectRoot = path.join(__dirname, '..');
-  const iconsDir = path.join(projectRoot, 'public', 'icons');
+  const sourceDir = path.join(projectRoot, 'src', 'icons');
+  const outputDir = path.join(projectRoot, 'public', 'icons');
   
-  // Ensure the icons directory exists
-  if (!fs.existsSync(iconsDir)) {
-    fs.mkdirSync(iconsDir, { recursive: true });
+  // Ensure the output directory exists
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
   }
 
   console.log('Generating PWA icons...');
 
   try {
     // Generate 192x192 PNG from SVG
-    await sharp(path.join(iconsDir, 'pwa-192x192.svg'))
+    await sharp(path.join(sourceDir, 'pwa-192x192.svg'))
       .png()
       .resize(192, 192)
-      .toFile(path.join(iconsDir, 'pwa-192x192.png'));
+      .toFile(path.join(outputDir, 'pwa-192x192.png'));
     console.log('✓ Generated pwa-192x192.png');
 
     // Generate 512x512 PNG from SVG
-    await sharp(path.join(iconsDir, 'pwa-512x512.svg'))
+    await sharp(path.join(sourceDir, 'pwa-512x512.svg'))
       .png()
       .resize(512, 512)
-      .toFile(path.join(iconsDir, 'pwa-512x512.png'));
+      .toFile(path.join(outputDir, 'pwa-512x512.png'));
     console.log('✓ Generated pwa-512x512.png');
 
     // Generate 512x512 maskable PNG from SVG
-    await sharp(path.join(iconsDir, 'pwa-512x512-maskable.svg'))
+    await sharp(path.join(sourceDir, 'pwa-512x512-maskable.svg'))
       .png()
       .resize(512, 512)
-      .toFile(path.join(iconsDir, 'pwa-512x512-maskable.png'));
+      .toFile(path.join(outputDir, 'pwa-512x512-maskable.png'));
     console.log('✓ Generated pwa-512x512-maskable.png');
 
     console.log('All PWA icons generated successfully!');
