@@ -34,6 +34,22 @@
   vertical-align: middle;
 }
 
+/* Colorful GitHub icon */
+.icon.fa-github:before {
+  color: #333333 !important;
+}
+
+/* Colorful LinkedIn icon */
+.icon.fa-linkedin:before {
+  color: #0A66C2 !important;
+}
+
+/* Colorful Email icon */
+.icon.fa-envelope:before {
+  color: #999999 !important;
+  opacity: 0.7;
+}
+
 /* Ensure compatibility with original design */
 .about-content p {
   text-align: justify;
