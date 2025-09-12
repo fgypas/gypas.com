@@ -8,3 +8,4 @@ public/
 wiki/
 .DS_Store
 node_modules
+dist

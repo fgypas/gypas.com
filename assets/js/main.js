@@ -16,7 +16,7 @@
 
 	$(function() {
 
-		var	$window = $(window),
+		const	$window = $(window),
 			$body = $('body');
 
 		// Disable animations/transitions until the page has loaded.
@@ -45,14 +45,14 @@
 			$('.scrolly').scrolly();
 
 		// Nav.
-			var $nav_a = $('#nav a');
+			const $nav_a = $('#nav a');
 
 			// Scrolly-fy links.
 				$nav_a
 					.scrolly()
 					.on('click', function(e) {
 
-						var t = $(this),
+						const t = $(this),
 							href = t.attr('href');
 
 						if (href[0] != '#')
@@ -71,11 +71,11 @@
 					});
 
 			// Initialize scrollzer.
-				var ids = [];
+				const ids = [];
 
 				$nav_a.each(function() {
 
-					var href = $(this).attr('href');
+					const href = $(this).attr('href');
 
 					if (href[0] != '#')
 						return;
