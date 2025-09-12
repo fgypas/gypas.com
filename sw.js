@@ -1,7 +1,6 @@
 // Service Worker for Foivos Gypas Portfolio (2025)
 // Provides offline functionality and performance improvements
 
-const CACHE_NAME = 'foivos-portfolio-v2.0.0';
 const STATIC_CACHE = 'static-v2.0.0';
 const DYNAMIC_CACHE = 'dynamic-v2.0.0';
 

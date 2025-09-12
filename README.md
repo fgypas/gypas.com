@@ -106,8 +106,7 @@ npm run format
 │   └── fonts/                # Web fonts
 ├── images/                   # Optimized images
 ├── index.html               # Main HTML file
-├── sw.js                    # Service Worker
-├── vite.config.js          # Vite configuration
+├── vite.config.js          # Vite configuration (includes PWA setup)
 ├── package.json            # Dependencies and scripts
 └── README.md              # This file
 ```
