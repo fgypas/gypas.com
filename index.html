@@ -3,61 +3,94 @@
 <head>
 	<meta charset="utf-8">
 	<title>Foivos Gypas, PhD - Bioinformatics & Data Science</title>
-	<meta name="description" content="Foivos Gypas - Bioinformatics Software Engineer specializing in data science, software development, and computational biology research.">
-	<meta name="keywords" content="bioinformatics, data science, software development, computational biology, RNA-seq, Basel, Switzerland">
+	<meta name="description" content="Foivos Gypas, PhD - bioinformatics data scientist and software engineer whose work focuses on bioinformatics methods and pipelines for genomics and transcriptomics. A decade of experience in computational genomics, transcriptomics, and reproducible NGS pipelines.">
+	<meta name="keywords" content="bioinformatics, data science, software engineering, computational oncology, genomics, transcriptomics, RNA-seq, WGS, variant calling, Snakemake, Nextflow, Basel, Switzerland">
 	<meta name="author" content="Foivos Gypas">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#2c3e50">
-	
+
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://gypas.com/">
 	<meta property="og:title" content="Foivos Gypas, PhD - Bioinformatics & Data Science">
-	<meta property="og:description" content="Bioinformatics Software Engineer specializing in data science, software development, and computational biology research.">
+	<meta property="og:description" content="Bioinformatics data scientist and software engineer focused on bioinformatics methods and pipelines for genomics and transcriptomics.">
 	<meta property="og:image" content="https://gypas.com/images/me.jpg">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://gypas.com/">
 	<meta property="twitter:title" content="Foivos Gypas, PhD - Bioinformatics & Data Science">
-	<meta property="twitter:description" content="Bioinformatics Software Engineer specializing in data science, software development, and computational biology research.">
+	<meta property="twitter:description" content="Bioinformatics data scientist and software engineer focused on bioinformatics methods and pipelines for genomics and transcriptomics.">
 	<meta property="twitter:image" content="https://gypas.com/images/me.jpg">
 
 	<!-- Preload critical resources -->
 	<link rel="preload" href="assets/css/modern.css" as="style">
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
-	
+
 	<!-- Stylesheets -->
 	<link href="assets/css/main.css" rel="stylesheet">
 	<link href="assets/css/enhancements.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	
+
 	<!-- Favicon -->
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-	
+
+	<!-- Publication list styling -->
+	<style>
+		#publications .container > p { text-align: center; }
+		#publications ul {
+			list-style: none;
+			margin: 1.75em auto 0;
+			padding: 0;
+			max-width: 52em;
+			text-align: left;
+		}
+		#publications ul li {
+			margin: 0 0 1.3em;
+			padding-left: 1em;
+			line-height: 1.6;
+			border-left: 3px solid rgba(25, 84, 150, 0.35);
+		}
+		#publications ul li strong { color: #2c3e50; }
+		#publications ul li sup { color: #195496; font-weight: 700; }
+		#publications ul li a { word-break: break-word; }
+		#publications .pub-note {
+			font-size: 0.85em;
+			font-style: italic;
+			color: #777;
+			white-space: nowrap;
+		}
+	</style>
+
 	<!-- Structured Data -->
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",
 		"name": "Foivos Gypas",
-		"jobTitle": "Bioinformatics Software Engineer",
+		"jobTitle": "Bioinformatics Data Scientist & Software Engineer",
+		"description": "Bioinformatics data scientist and software engineer whose work focuses on bioinformatics methods and pipelines for genomics and transcriptomics.",
 		"worksFor": {
 			"@type": "Organization",
 			"name": "Novartis BioMedical Research"
 		},
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Basel",
-			"addressCountry": "Switzerland"
-		},
+		"knowsAbout": [
+			"Bioinformatics",
+			"Computational Oncology",
+			"Genomics",
+			"Transcriptomics",
+			"RNA-seq",
+			"Whole Genome Sequencing",
+			"Software Engineering",
+			"Workflow Pipelines"
+		],
 		"alumniOf": [
 			{
 				"@type": "Organization",
 				"name": "University of Basel"
 			},
 			{
-				"@type": "Organization", 
+				"@type": "Organization",
 				"name": "National and Kapodistrian University of Athens"
 			},
 			{
@@ -85,14 +118,16 @@
 			<h1 id="title">Foivos Gypas, PhD</h1>
 			<p>Bioinformatics<br />
 			Data Science<br />
-			Software Development</p>
+			Software Engineering</p>
 		</div>
-		
+
 		<!-- Navigation -->
 		<nav id="nav">
 			<ul>
 				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 				<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+				<li><a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-briefcase">Experience</span></a></li>
+				<li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Publications</span></a></li>
 				<li><a href="#tools" id="tools-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Open Source Tools</span></a></li>
 				<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 			</ul>
@@ -118,14 +153,14 @@
 			<header>
 				<div>
 					<img src="images/me.jpg" alt="Portrait of Foivos Gypas" width="400" />
-					<p>Hi! I'm <strong>Foivos</strong>, a bioinformatics software engineer working in Basel, Switzerland. I am interested in<br />
-					<strong>Bioinformatics, Data Science and Software Development.</strong></p>
+					<p>Hi! I'm <strong>Foivos</strong>, a bioinformatics data scientist and software engineer in Basel, Switzerland. My work focuses on<br />
+					<strong>bioinformatics methods and pipelines</strong> for genomics and transcriptomics.</p>
 				</div>
 			</header>
 		</div>
 	</section>
 	<!-- About Me -->
-	<section class="four" id="about">
+	<section class="two" id="about">
 		<div class="container">
 			<header>
 				<h2>About Me</h2>
@@ -133,11 +168,84 @@
 
 			<p style="text-align: justify;">My name is Foivos and I come from the beautiful island of <a href="https://en.wikipedia.org/wiki/Corfu">Corfu</a>, Greece. Since 2014 I live and work in Basel, Switzerland.</p>
 
-			<p style="text-align: justify;">I am currently a Bioinformatics Software Engineer at <a href="https://www.novartis.com/our-science/novartis-institutes-biomedical-research">Novartis BioMedical Research (BR)</a>. In the past I worked as a postdoctoral researcher at the lab of Professor <a href="https://grosshanslab.org/">Helge Grosshans</a> at <a href="https://www.fmi.ch/">FMI</a> and at the lab of Professor <a href="https://zavolan.biozentrum.unibas.ch/">Mihaela Zavolan</a> at <a href="https://www.biozentrum.unibas.ch/">Biocenter</a> where I worked on computational methods to study RNA function and processing, focusing on the development of software and pipelines to analyze High Throughput Sequencing (HTS) data ranging from RNA-seq, poly(A)-seq and ribo-seq to single cells and third generation sequencing technologies (PacBio, Oxford Nanopore).</p>
+			<p style="text-align: justify;">I hold a PhD and have over a decade of experience in computational genomics and transcriptomics, building the methods, pipelines, and data infrastructure that turn high-throughput sequencing into reliable biological insight — currently at <a href="https://www.novartis.com/our-science/novartis-institutes-biomedical-research">Novartis BioMedical Research</a>.</p>
+		</div>
+	</section>
+	<!-- Experience -->
+	<section class="three" id="experience">
+		<div class="container">
+			<header>
+				<h2>Experience</h2>
+			</header>
 
-			<p style="text-align: justify;">I obtained a Ph.D. in Bioinformatics from the University of Basel (advisor: Professor <a href="https://zavolan.biozentrum.unibas.ch/">Mihaela Zavolan</a>). I also hold a MSc in Bioinformatics from the National and Kapodistrian University of Athens, Greece (Department of Biology) and a diploma (5 year's course) in Electronics and Computer Engineering from the Technical University of Crete, Greece.</p>
+			<h3>Professional Experience</h3>
+			<dl>
+				<dt><strong>Novartis BioMedical Research</strong>, Basel — <em>Sep 2021 – Present</em></dt>
+				<dd>Leading the development of bioinformatics methods and pipelines for genomics and transcriptomics.</dd>
 
-			<p>You can find a list of publications on <a href="https://scholar.google.ch/citations?user=bqPlkhMAAAAJ&hl=en">Google Scholar</a>, or on <a href="https://orcid.org/0000-0002-7233-8794">ORCID</a>.</p>
+				<dt><strong>Friedrich Miescher Institute for Biomedical Research (FMI)</strong>, Basel — <em>Apr 2019 – Aug 2021</em></dt>
+				<dd>Postdoctoral researcher in the group of Helge Grosshans. Developed computational methods and pipelines to dissect RNA-mediated mechanisms controlling developmental timing and cell fate, using RNA-seq and small-RNA sequencing data.</dd>
+
+				<dt><strong>Biozentrum, University of Basel</strong> — <em>Apr 2018 – Mar 2019</em></dt>
+				<dd>Postdoctoral researcher in the group of Mihaela Zavolan. Designed and implemented tools and pipelines for multi-modal sequencing data (RNA-seq, poly(A)-seq, ribo-seq, single-cell, and long-read) to investigate RNA processing in health and disease.</dd>
+
+				<dt><strong>Biozentrum, University of Basel</strong> — <em>Jan 2014 – Mar 2018</em></dt>
+				<dd>PhD candidate in the group of Mihaela Zavolan (RNA Regulatory Networks). Developed novel computational methods for transcript-isoform identification and quantification from RNA-seq data.</dd>
+			</dl>
+
+			<h3>Education</h3>
+			<dl>
+				<dt><strong>PhD in Bioinformatics</strong> — University of Basel, Switzerland, 2018</dt>
+				<dd>Thesis: <em>Computational methods for the identification and quantification of transcript isoforms from next generation sequencing data.</em> Advisor: Mihaela Zavolan.</dd>
+
+				<dt><strong>MSc in Bioinformatics</strong> — National and Kapodistrian University of Athens, Greece, 2013</dt>
+				<dd>Thesis: <em>Database of Molecular Recognition Features (MoRFs) in membrane proteins.</em> Faculty of Biology. Supervisor: Stavros J. Hamodrakas.</dd>
+
+				<dt><strong>Diploma in Electronic &amp; Computer Engineering</strong> (5-year) — Technical University of Crete, Greece, 2011</dt>
+				<dd>Thesis: <em>Development of a Neural Model for Gene Analysis.</em> Digital Image &amp; Signal Processing Lab. Supervisor: Michalis E. Zervakis.</dd>
+			</dl>
+		</div>
+	</section>
+	<!-- Publications -->
+	<section class="four" id="publications">
+		<div class="container">
+			<header>
+				<h2>Publications</h2>
+			</header>
+
+			<p>A complete and up-to-date list is available on <a href="https://scholar.google.ch/citations?user=bqPlkhMAAAAJ&hl=en">Google Scholar</a> and <a href="https://orcid.org/0000-0002-7233-8794">ORCID</a>.</p>
+
+			<ul>
+				<li>Katsantoni M, <strong>Gypas F</strong>, Herrmann CJ, Burri D, Bąk M, Iborra P, Agarwal K, Ataman M, Balajti M, Pozzan N, Schlusser N, Moon Y, Mironov A, Börsch A, Zavolan M, Kanitz A. <strong>ZARP: A user-friendly and versatile RNA-seq analysis workflow.</strong> <em>F1000Research</em> 2024, 13:533. <a href="https://doi.org/10.12688/f1000research.149237.1">doi:10.12688/f1000research.149237.1</a></li>
+
+				<li>Quévillon Huberdeau M, Shah VN, Nahar S, Neumeier J, Houle F, Bruckmann A, <strong>Gypas F</strong>, Nakanishi K, Großhans H, Meister G, Simard MJ. <strong>A specific type of Argonaute phosphorylation regulates binding to microRNAs during <em>C. elegans</em> development.</strong> <em>Cell Reports</em> 2022;41(11):111822. <a href="https://doi.org/10.1016/j.celrep.2022.111822">doi:10.1016/j.celrep.2022.111822</a></li>
+
+				<li>Karousis ED, <strong>Gypas F</strong>, Zavolan M, et al. <strong>Nanopore sequencing reveals endogenous NMD-targeted isoforms in human cells.</strong> <em>Genome Biology</em> 2021;22:223. <a href="https://doi.org/10.1186/s13059-021-02439-3">doi:10.1186/s13059-021-02439-3</a></li>
+
+				<li>Gudipati RK, Braun K, <strong>Gypas F</strong>, Hess D, Schreier J, Carl SH, Ketting RF, Großhans H. <strong>Protease-mediated processing of Argonaute proteins controls small RNA association.</strong> <em>Molecular Cell</em> 2021;81(11):2388–2402.e8. <a href="https://doi.org/10.1016/j.molcel.2021.03.029">doi:10.1016/j.molcel.2021.03.029</a></li>
+
+				<li>Ho-Xuan H, Lehmann G, Glažar P, <strong>Gypas F</strong>, Eichner N, Heizler K, Schlitt HJ, Zavolan M, Rajewsky N, Meister G, Hackl C. <strong>Gene expression signatures of a preclinical mouse model during colorectal cancer progression under low-dose metronomic chemotherapy.</strong> <em>Cancers (Basel)</em> 2020;13(1):49. <a href="https://doi.org/10.3390/cancers13010049">doi:10.3390/cancers13010049</a></li>
+
+				<li>Jutzi D, Campagne S, Schmidt R, Reber S, Mechtersheimer J, <strong>Gypas F</strong>, Schweingruber C, Colombo M, von Schroetter C, Loughlin FE, Devoy A, Hedlund E, Zavolan M, Allain FH, Ruepp MD. <strong>Aberrant interaction of FUS with the U1 snRNA provides a molecular mechanism of FUS-induced amyotrophic lateral sclerosis.</strong> <em>Nature Communications</em> 2020;11(1):6341. <a href="https://doi.org/10.1038/s41467-020-20191-3">doi:10.1038/s41467-020-20191-3</a></li>
+
+				<li><strong>Gypas F</strong><sup>*</sup>, Gruber AJ<sup>*</sup>, Riba A, Schmidt R, Zavolan M. <strong>Terminal exon characterization with TECtool reveals an abundance of cell-specific isoforms.</strong> <em>Nature Methods</em> 2018;15:837–840. <a href="https://doi.org/10.1038/s41592-018-0114-z">doi:10.1038/s41592-018-0114-z</a> <span class="pub-note">* equal contribution</span></li>
+
+				<li>Gumienny R, Jedlinski DJ, Schmidt A, <strong>Gypas F</strong>, Martin G, Vina-Vilaseca A, Zavolan M. <strong>High-throughput identification of C/D box snoRNA targets with CLIP and RiboMeth-seq.</strong> <em>Nucleic Acids Research</em> 2017;45(5):2341–2353. <a href="https://doi.org/10.1093/nar/gkw1321">doi:10.1093/nar/gkw1321</a></li>
+
+				<li>Mittal N, Kunz C, <strong>Gypas F</strong>, Kishore S, Martin G, Wenzel F, van Nimwegen E, Schär P, Zavolan M. <strong>Ewing sarcoma breakpoint region 1 prevents transcription-associated genome instability.</strong> <em>bioRxiv</em> 2015:034215. <a href="https://doi.org/10.1101/034215">doi:10.1101/034215</a></li>
+
+				<li><strong>Gypas F</strong><sup>*</sup>, Kanitz A<sup>*</sup>, Gruber AJ, Gruber AR, Martin G, Zavolan M. <strong>Comparative assessment of methods for the computational inference of transcript isoform abundance from RNA-seq data.</strong> <em>Genome Biology</em> 2015;16(1):150. <a href="https://doi.org/10.1186/s13059-015-0702-5">doi:10.1186/s13059-015-0702-5</a> <span class="pub-note">* equal contribution</span></li>
+
+				<li><strong>Gypas F</strong>, Mentis AFA. <strong>Human microbiome and the methods of its study — metagenomics.</strong> <em>Acta Microbiologica Hellenica</em> 2014;59(2).</li>
+
+				<li>Mentis AFA, <strong>Gypas F</strong>, Mentis AF. <strong>Human enteric microbiome: its role in health and disease.</strong> <em>Archives of Hellenic Medicine</em> 2013;30(3).</li>
+
+				<li><strong>Gypas F</strong>, Tsaousis GN, Hamodrakas SJ. <strong>mpMoRFsDB: a database of molecular recognition features in membrane proteins.</strong> <em>Bioinformatics</em> 2013;29(19):2517–2518. <a href="https://doi.org/10.1093/bioinformatics/btt427">doi:10.1093/bioinformatics/btt427</a></li>
+
+				<li><strong>Gypas F</strong>, Bei ES, Zervakis M, Sfakianakis S. <strong>A disease annotation study of gene signatures in a breast cancer microarray dataset.</strong> <em>Conf Proc IEEE Eng Med Biol Soc</em> 2011:5551–5554. <a href="https://doi.org/10.1109/IEMBS.2011.6091416">doi:10.1109/IEMBS.2011.6091416</a></li>
+
+				<li><strong>Gypas F</strong>. <strong>Computational methods for the identification and quantification of transcript isoforms from next generation sequencing data.</strong> PhD Thesis, University of Basel, 2018.</li>
+			</ul>
 		</div>
 	</section>
 	<!-- Open Source Tools -->
@@ -180,6 +288,13 @@
 							TECtool uses mRNA and 3' end sequencing data to identify novel terminal exons
 						</header>
 					</article>
+
+					<article class="item">
+						<header>
+							<h3><a href="https://github.com/Novartis/scar">scAR</a></h3>
+							Deep-learning model for denoising single-cell omics data by removing ambient signal
+						</header>
+					</article>
 				</div>
 
 				<div class="4u 12u$(mobile)">
@@ -218,7 +333,7 @@
 <!-- Footer -->
 <div id="footer">
 	<ul class="copyright">
-		<li>&copy; 2025 Foivos Gypas. All rights reserved.</li>
+		<li>&copy; 2026 Foivos Gypas. All rights reserved.</li>
 		<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 	</ul>
 </div>
